@@ -1,4 +1,4 @@
-import part1, part2
+from . import part1, part2
 
 file = open(r"day{{ cookiecutter.day }}/input.txt", "r")
 lines = file.readlines()

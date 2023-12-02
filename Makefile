@@ -8,4 +8,4 @@ test:
 	@poetry run python -m unittest discover -s day$(day)
 
 run:
-	@poetry run python day$(day)
+	@poetry run python -m day$(day)

@@ -1,4 +1,4 @@
-import part1, part2
+from . import part1, part2
 
 file = open(r"day1/input.txt", "r")
 lines = file.readlines()
