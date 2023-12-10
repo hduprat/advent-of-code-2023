@@ -6,7 +6,7 @@ authors = ["hduprat <hugod@bam.tech>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 cookiecutter = "^2.5.0"
 
 [build-system]
