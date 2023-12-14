@@ -1,7 +1,10 @@
-def split_list(l: list, start: list = [list()]) -> list[list]:
-    if len(l) == 0:
-        return start
-    if l[0].strip() == "":
-        return split_list(l[1:], start + [list()])
-    start[len(start) - 1].append(l[0].strip())
-    return split_list(l[1:], start)
+def split_list(l: list[str], start: list[str] = [list()]) -> list[list[str]]:
+    output: list[list[str]] = [[]]
+
+    for elt in l:
+        if elt.strip() == "":
+            output.append([])
+        else:
+            output[-1].append(elt.strip())
+
+    return output
