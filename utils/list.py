@@ -26,3 +26,11 @@ def partition(cond: Callable[[T], bool], l: list[T]) -> tuple[list[T], list[T]]:
         else:
             removed.append(elt)
     return (filtered, removed)
+
+
+def pairs(l: list[T]) -> list[tuple[T, T]]:
+    output: list[tuple[T, T]] = []
+    for i in range(0, len(l), 2):
+        output.append((l[i], l[i + 1]))
+
+    return output
